@@ -358,8 +358,8 @@ def generate_scripts(dag,config_path,script_path,app_path,sample_path):
         f.write('\tprintf("%s",new_path);\n')
         f.write("\tbash_script="/centralized_scheduler/generate_random_files.sh"; \n")                               
         f.write("\tstrcat(bash_script,new_path); \n")
-	    f.write("\tstrcat(bash_script,file_size); \n")
-	    f.write("\tsystem(bash_script); \n")
+        f.write("\tstrcat(bash_script,file_size); \n")
+	f.write("\tsystem(bash_script); \n")
         f.write("} \n")                                                      #end of strcmp
         
 
@@ -371,9 +371,9 @@ def generate_scripts(dag,config_path,script_path,app_path,sample_path):
         f.write("\tstrcpy(output_path,new_path);\n")
         f.write("\t file_size=itoa(rand() + 1);\n")
         f.write("\tstrcpy(new_file,output_name); \n")
-	    f.write("\t bash_script="/centralized_scheduler/generate_random_files.sh"; \n")                               
+	f.write("\t bash_script="/centralized_scheduler/generate_random_files.sh"; \n")                               
         f.write("\tstrcat(bash_script,new_path); \n")
-	    f.write("\tstrcat(bash_script,file_size); \n")
+	f.write("\tstrcat(bash_script,file_size); \n")
         f.write("\tsystem(bash_script); \n")                                      
         f.write("\t \t } \n") 
         f.write("\treturn output_path; \n")
