@@ -21,7 +21,7 @@ import json
 import shutil
 from collections import defaultdict
 import random
-
+ 
 EPSILON = 1e-2
 
 def parse_args(conf_file):
