@@ -10,7 +10,7 @@ This code uses the output DAG of ``rand_task_gen.py``(by Diyi), which is used to
 
 ## User Instructions
 Run the dummy_app_gen code to generate the C scripts:<br />
-**python3 dummy_app_gen.py --task_config.yml**
+**python3 dummy_app_gen.py --task_config.yml**<br />
 To execute the C scripts: <br />
 **gcc -o taskx.c** <br />
 **./taskx** <br />
